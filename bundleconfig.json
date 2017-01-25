@@ -1,0 +1,56 @@
+[
+  {
+    "outputFileName": "shared/lib/jquery/jquery-modified.min.js",
+    "inputFiles": [
+      "shared/lib/jquery/jquery-3.1.1.min.js",
+      "shared/lib/jquery/jquery.cookie.min.js"
+    ]
+  },
+  {
+    "outputFileName": "shared/js/dictionary.min.js",
+    "inputFiles": [
+      "shared/js/dictionary.js"
+    ]
+  },
+  {
+    "outputFileName": "shared/js/tssdk.min.js",
+    "inputFiles": [
+      "shared/js/tssdk.js"
+    ]
+  },
+  {
+    "outputFileName": "index/index.min.html",
+    "inputFiles": [
+      "shared/html/import.html",
+      "index/index.html"
+    ]
+  },
+  {
+    "outputFileName": "93/index.html",
+    "inputFiles": [
+      "shared/html/import.html",
+      "93/chapter.html"
+    ]
+  },
+  {
+    "outputFileName": "94/index.html",
+    "inputFiles": [
+      "shared/html/import.html",
+      "94/chapter.html"
+    ]
+  },
+  {
+    "outputFileName": "95/index.html",
+    "inputFiles": [
+      "shared/html/import.html",
+      "95/chapter.html"
+    ]
+  },
+  {
+    "outputFileName": "96/index.html",
+    "inputFiles": [
+      "shared/html/import.html",
+      "96/chapter.html"
+    ]
+  }
+]

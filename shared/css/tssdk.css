@@ -1,0 +1,297 @@
+﻿@font-face {
+  font-family: tssdk;
+  src: local("tssdk"), url(../font/tssdk.woff) format("woff"), url(../font/tssdk.ttf) format("truetype"), url(https://rawgit.com/InnocentBaby/tssdk/master/shared/font/tssdk.woff) format("woff"), url(https://rawgit.com/InnocentBaby/tssdk/master/shared/font/tssdk.ttf) format("truetype");
+}
+@font-face {
+  font-family: tssdk-title;
+  src: local("tssdk-title"), url(../font/tssdk-title.woff) format("woff"), url(../font/tssdk-title.ttf) format("truetype"), url(https://rawgit.com/InnocentBaby/tssdk/master/shared/font/tssdk-title.woff) format("woff"), url(https://rawgit.com/InnocentBaby/tssdk/master/shared/font/tssdk-title.ttf) format("truetype");
+}
+@font-face {
+  font-family: Linotext;
+  src: local("Linotext"), url(../font/Linotext.woff) format("woff"), url(../font/Linotext.ttf) format("truetype"), url(https://rawgit.com/InnocentBaby/tssdk/master/shared/font/Linotext.woff) format("woff"), url(https://rawgit.com/InnocentBaby/tssdk/master/shared/font/Linotext.ttf) format("truetype");
+}
+.tssdk.chapter {
+  font-family: tssdk, "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 1.25rem;
+  text-align: justify;
+  line-height: 1.5;
+}
+.tssdk.chapter ruby > rt {
+  font-size: 75%;
+}
+.tssdk.chapter > .summary {
+  margin: 0.5em auto;
+}
+.tssdk.chapter > .summary .notes .note {
+  display: inline-block;
+}
+.tssdk.chapter > .title {
+  font-family: tssdk-title, "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  align-items: center;
+  display: flex;
+  font-size: 1.5em;
+  margin: 0.5em auto;
+  position: relative;
+}
+.tssdk.chapter > .title > .index {
+  font-family: Linotext;
+  font-size: 1.5em !important;
+  padding-right: 0.25em;
+  text-align: right;
+}
+.tssdk.chapter > .content > hr {
+  border: none;
+  font-family: tssdk;
+  font-size: 3em;
+}
+.tssdk.chapter > .content > hr:before {
+  content: "\f200";
+  display: inline-block;
+}
+.tssdk.chapter > .content .characters,
+.tssdk.chapter > .content .species,
+.tssdk.chapter > .content .jobs,
+.tssdk.chapter > .content .skills,
+.tssdk.chapter > .content .others {
+  display: inline-block;
+  font-style: normal;
+  font-weight: bold;
+  position: relative;
+  text-align: center;
+}
+.tssdk.chapter > .content .characters:before,
+.tssdk.chapter > .content .species:before,
+.tssdk.chapter > .content .jobs:before,
+.tssdk.chapter > .content .skills:before,
+.tssdk.chapter > .content .others:before,
+.tssdk.chapter > .content .characters:after,
+.tssdk.chapter > .content .species:after,
+.tssdk.chapter > .content .jobs:after,
+.tssdk.chapter > .content .skills:after,
+.tssdk.chapter > .content .others:after {
+  display: inline;
+  font-family: tssdk;
+  font-weight: normal;
+}
+.tssdk.chapter > .content .characters:hover,
+.tssdk.chapter > .content .species:hover,
+.tssdk.chapter > .content .jobs:hover,
+.tssdk.chapter > .content .skills:hover,
+.tssdk.chapter > .content .others:hover {
+  cursor: pointer;
+}
+.tssdk.chapter > .content .characters > .value > ruby,
+.tssdk.chapter > .content .species > .value > ruby,
+.tssdk.chapter > .content .jobs > .value > ruby,
+.tssdk.chapter > .content .skills > .value > ruby,
+.tssdk.chapter > .content .others > .value > ruby {
+  font-weight: normal;
+}
+.tssdk.chapter > .content .characters > .value > ruby > rt,
+.tssdk.chapter > .content .species > .value > ruby > rt,
+.tssdk.chapter > .content .jobs > .value > ruby > rt,
+.tssdk.chapter > .content .skills > .value > ruby > rt,
+.tssdk.chapter > .content .others > .value > ruby > rt {
+  font-size: 50%;
+}
+.tssdk.chapter > .content .characters > .tooltips,
+.tssdk.chapter > .content .species > .tooltips,
+.tssdk.chapter > .content .jobs > .tooltips,
+.tssdk.chapter > .content .skills > .tooltips,
+.tssdk.chapter > .content .others > .tooltips {
+  background-color: #ffffff;
+  bottom: 50%;
+  box-shadow: 0 0.1em 0.2em 0 rgba(118, 118, 118, 0.25), 0 0.1em 0.5em 0 rgba(118, 118, 118, 0.25);
+  display: none;
+  font-size: 0.85em;
+  font-weight: normal;
+  left: 0;
+  padding: 1em;
+  position: absolute;
+  text-align: left;
+  z-index: 1;
+}
+.tssdk.chapter > .content .characters > .tooltips.show,
+.tssdk.chapter > .content .species > .tooltips.show,
+.tssdk.chapter > .content .jobs > .tooltips.show,
+.tssdk.chapter > .content .skills > .tooltips.show,
+.tssdk.chapter > .content .others > .tooltips.show {
+  bottom: 125%;
+  display: inline;
+}
+.tssdk.chapter > .content .characters > .tooltips > .arrow-border,
+.tssdk.chapter > .content .species > .tooltips > .arrow-border,
+.tssdk.chapter > .content .jobs > .tooltips > .arrow-border,
+.tssdk.chapter > .content .skills > .tooltips > .arrow-border,
+.tssdk.chapter > .content .others > .tooltips > .arrow-border {
+  border-color: transparent;
+  border-style: solid;
+  height: 0;
+  position: absolute;
+  top: 100%;
+  width: 0;
+  border-top-color: rgba(118, 118, 118, 0.25);
+  border-width: 0.6em;
+  left: 0.4em;
+}
+.tssdk.chapter > .content .characters > .tooltips > .arrow,
+.tssdk.chapter > .content .species > .tooltips > .arrow,
+.tssdk.chapter > .content .jobs > .tooltips > .arrow,
+.tssdk.chapter > .content .skills > .tooltips > .arrow,
+.tssdk.chapter > .content .others > .tooltips > .arrow {
+  border-color: transparent;
+  border-style: solid;
+  height: 0;
+  position: absolute;
+  top: 100%;
+  width: 0;
+  border-top-color: #ffffff;
+  border-width: 0.5em;
+  left: 0.5em;
+}
+.tssdk.chapter > .content .characters > .tooltips > .lang,
+.tssdk.chapter > .content .species > .tooltips > .lang,
+.tssdk.chapter > .content .jobs > .tooltips > .lang,
+.tssdk.chapter > .content .skills > .tooltips > .lang,
+.tssdk.chapter > .content .others > .tooltips > .lang {
+  display: block;
+  transition: all ease-in-out 0.1s;
+  white-space: nowrap;
+}
+.tssdk.chapter > .content .characters > .tooltips > .lang > ruby,
+.tssdk.chapter > .content .species > .tooltips > .lang > ruby,
+.tssdk.chapter > .content .jobs > .tooltips > .lang > ruby,
+.tssdk.chapter > .content .skills > .tooltips > .lang > ruby,
+.tssdk.chapter > .content .others > .tooltips > .lang > ruby {
+  font-weight: normal;
+}
+.tssdk.chapter > .content .characters > .tooltips > .lang > ruby > rt,
+.tssdk.chapter > .content .species > .tooltips > .lang > ruby > rt,
+.tssdk.chapter > .content .jobs > .tooltips > .lang > ruby > rt,
+.tssdk.chapter > .content .skills > .tooltips > .lang > ruby > rt,
+.tssdk.chapter > .content .others > .tooltips > .lang > ruby > rt {
+  font-size: 50%;
+}
+.tssdk.chapter > .content .characters > .tooltips > .lang:hover,
+.tssdk.chapter > .content .species > .tooltips > .lang:hover,
+.tssdk.chapter > .content .jobs > .tooltips > .lang:hover,
+.tssdk.chapter > .content .skills > .tooltips > .lang:hover,
+.tssdk.chapter > .content .others > .tooltips > .lang:hover {
+  color: #2185d0;
+}
+.tssdk.chapter > .content .characters > .tooltips > .lang.active,
+.tssdk.chapter > .content .species > .tooltips > .lang.active,
+.tssdk.chapter > .content .jobs > .tooltips > .lang.active,
+.tssdk.chapter > .content .skills > .tooltips > .lang.active,
+.tssdk.chapter > .content .others > .tooltips > .lang.active {
+  font-weight: bold;
+}
+.tssdk.chapter > .content .species {
+  /*&:before {
+                content: "\f000";
+            }
+
+            &:after {
+                content: "\f001";
+            }*/
+}
+.tssdk.chapter > .content .jobs {
+  /*&:before {
+                content: "\f002";
+            }
+
+            &:after {
+                content: "\f003";
+            }*/
+}
+.tssdk.chapter > .content .skills:before {
+  content: "\f008";
+}
+.tssdk.chapter > .content .skills:after {
+  content: "\f009";
+}
+.tssdk.chapter > .content .others {
+  /*&:before {
+                content: "\f006";
+            }
+
+            &:after {
+                content: "\f007";
+            }*/
+}
+.tssdk.chapter > .content .captions > .content {
+  display: none;
+}
+.tssdk.chapter > .content .captions-1:before {
+  counter-increment: captions;
+  /*content: "\f008";*/
+}
+.tssdk.chapter > .content .captions-1:after {
+  /*content: "\f009";*/
+}
+.tssdk.chapter > .content .callouts-1 {
+  font-style: italic;
+}
+.tssdk.chapter > .content .callouts-1:before,
+.tssdk.chapter > .content .callouts-1:after {
+  font-family: tssdk;
+  font-weight: normal;
+  font-style: normal;
+}
+.tssdk.chapter > .content .callouts-1:before {
+  content: "\f100";
+}
+.tssdk.chapter > .content .callouts-1:after {
+  content: "\f101";
+}
+.tssdk.chapter > .content .callouts-2 {
+  font-style: italic;
+}
+.tssdk.chapter > .content .callouts-2:before,
+.tssdk.chapter > .content .callouts-2:after {
+  font-family: tssdk;
+  font-style: italic;
+  font-weight: normal;
+}
+.tssdk.chapter > .content .callouts-2:before {
+  content: "\f102";
+  margin-right: 0.1em;
+}
+.tssdk.chapter > .content .callouts-2:after {
+  content: "\f103";
+  margin-left: 0.1em;
+}
+.tssdk.chapter > .content .callouts-3 {
+  font-style: italic;
+}
+.tssdk.chapter > .content .callouts-3:before,
+.tssdk.chapter > .content .callouts-3:after {
+  font-family: tssdk;
+  font-style: normal;
+  font-weight: normal;
+}
+.tssdk.chapter > .content .callouts-3:before {
+  content: "(";
+  margin-right: 0.1em;
+}
+.tssdk.chapter > .content .callouts-3:after {
+  content: ")";
+  margin-left: 0.1em;
+}
+.tssdk.chapter > .content .callouts-4 {
+  font-style: italic;
+}
+.tssdk.chapter > .content .callouts-4:before,
+.tssdk.chapter > .content .callouts-4:after {
+  font-family: tssdk;
+  font-style: normal;
+  font-weight: normal;
+}
+.tssdk.chapter > .content .callouts-4:before {
+  content: "\f104";
+  margin-right: 0.1em;
+}
+.tssdk.chapter > .content .callouts-4:after {
+  content: "\f105";
+  margin-left: 0.1em;
+}
