@@ -25,6 +25,10 @@
 .tssdk.chapter > .summary .notes .note {
   display: inline-block;
 }
+.tssdk.chapter > .arc {
+  font-family: tssdk-title, "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  font-size: 2.5em;
+}
 .tssdk.chapter > .title {
   font-family: tssdk-title, "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
   align-items: center;

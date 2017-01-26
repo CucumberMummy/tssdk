@@ -36,6 +36,12 @@
 			"tentativelyTranslated": "Gabil ",
 			"tranlated": ""
 		},
+		"Gerudo": {
+			"en": "Gerudo",
+			"jp": "<ruby>ゲルド<rt></rt></ruby>",
+			"tentativelyTranslated": "Gerudo",
+			"tranlated": ""
+		},
 		"Gobuta": {
 			"en": "Gobuta",
 			"jp": "<ruby>ゴブタ<rt></rt></ruby>",
@@ -90,6 +96,12 @@
 			"tentativelyTranslated": "Ranga",
 			"tranlated": ""
 		},
+		"Rigurdo": {
+			"en": "Rigurdo",
+			"jp": "<ruby>リグルド<rt></rt></ruby>",
+			"tentativelyTranslated": "Rigurdo",
+			"tranlated": ""
+		},
 		"Rimuru": {
 			"en": "Rimuru",
 			"jp": "<ruby>リムル<rt></rt></ruby>",
@@ -132,6 +144,12 @@
 			"tentativelyTranslated": "Souka",
 			"tranlated": ""
 		},
+		"Veldora": {
+			"en": "Veldora",
+			"jp": "<ruby>ヴェルドラ<rt></rt></ruby>",
+			"tentativelyTranslated": "Veldora",
+			"tranlated": ""
+		},
 		"Yuuki": {
 			"en": "Yuuki",
 			"jp": "<ruby>ユウキ<rt></rt></ruby>",
@@ -162,6 +180,12 @@
 			"en": "Slime",
 			"jp": "<ruby>スライム<rt></rt></ruby>",
 			"tentativelyTranslated": "Slime",
+			"tranlated": ""
+		},
+		"Star Wolf": {
+			"en": "Star Wolf",
+			"jp": "<ruby>星狼<rt></rt></ruby>",
+			"tentativelyTranslated": "Tinh Lang",
 			"tranlated": ""
 		}
 	},
@@ -426,6 +450,12 @@
 			"en": "Unique Skill",
 			"jp": "<ruby>ユニークスキル<rt></rt></ruby>",
 			"tentativelyTranslated": "Kỹ Năng Độc Nhất",
+			"tranlated": ""
+		},
+		"Yellow Numbers": {
+			"en": "Yellow Numbers",
+			"jp": "<ruby>黄色軍団<rt>イエローナンバーズ</rt></ruby>",
+			"tentativelyTranslated": "Hoàng Sắc Quân Đoàn",
 			"tranlated": ""
 		}
 	}
